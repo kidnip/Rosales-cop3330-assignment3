@@ -1,0 +1,13 @@
+@startuml
+
+class NameSorter{
+    ..Methods..
+    +{static} String[] sort()
+    +{static} void main()
+}
+circle Input_File
+
+Input_File -> NameSorter : 1. File is read and turned into array
+NameSorter <- NameSorter : 2. Calls sort() from within main()
+
+@enduml

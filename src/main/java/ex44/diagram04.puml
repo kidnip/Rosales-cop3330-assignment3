@@ -1,0 +1,32 @@
+@startuml
+
+class Products{
+    ..Getters..
+    + String getName()
+    + float getPrice()
+    + int getQuantity()
+    ..Setters..
+    + void setName()
+    + void setPrice()
+    + void setQuantity()
+    --private data--
+    -String name
+    -float price
+    -int quantity
+
+}
+
+class ProductSearch {
+    ..Methods..
+    +void main()
+    +Products[] parseFile()
+}
+
+circle JSON_File
+
+ProductSearch <- ProductSearch : 1. Calls parseFile() within main()
+Products <-> ProductSearch : 3. creates Products[] with text parsed from parseFile()
+Products -> ProductSearch : 4. get Methods used to print data
+JSON_File -up-> ProductSearch : 2. Takes input to use in parseFile()
+
+@enduml

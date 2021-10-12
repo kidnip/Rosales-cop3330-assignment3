@@ -1,0 +1,53 @@
+This program takes in user input and creates
+files for website building purposes based
+on the input given
+
+function indexGen(Argument one, Argument two, Argument three){
+
+    try{
+        Using a provided path name, this function will
+        write a String of text to a new .html file
+        with tags for the website name and author
+    }
+    catch{
+        Prints to user that file could not be created
+    }
+
+end
+}
+
+{
+In the main function
+
+    Take input from user for the site name, author name,
+    and if they want either a JavaScript file and/or CSS
+    file
+
+    if a directory of the path name can be created{
+        then make it and print success
+    }
+    else{
+        print failure statement
+    }
+
+    Call indexGen using path name for .html file,
+    website name and author name
+
+    if user wants a JS file created{
+        if file can be created{
+            Print success
+        }
+        else{
+            Print failure
+        }
+    }
+
+    if user wants a CSS file created{
+        if file can be created{
+            Print success
+        }
+        else{
+            Print failure
+        }
+    }
+}

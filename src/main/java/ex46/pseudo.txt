@@ -1,0 +1,51 @@
+This program reads text from a file
+to assess the frequency of each word
+that appears in the text
+
+function getFrequencies(Argument one){
+
+    Initialize a temporary Hash Map
+    for every entry in the String array{
+        if the Hash Map contains the key already{
+            then increment the key value by one
+            to simulate the frequency
+        }
+        else{
+            insert an entry of the word into
+            the Hash Map, initializing the
+            value to one
+        }
+    }
+
+    Sort the Hash Map into to value descending order,
+    so most frequent item is on the top of the list
+    Return sorted Hash Map
+
+end
+}
+
+{
+In the main function
+
+    Create a readable file and initialize an ArrayList for Strings
+
+    try{
+        while file has a next line{
+            Insert the scanned word from the file into
+            the ArrayList
+        }
+        Convert the ArrayList in a String array and pass
+        it to the getFrequencies function as the parameter
+        Store the result into a Hash Map
+
+        for every entry in the Hash Map{
+            Print the key for the entry
+            for the value of each key{
+                Print an * to simulate frequency number
+            }
+        }
+    }
+    catch{
+        Print failure statement
+    }
+}

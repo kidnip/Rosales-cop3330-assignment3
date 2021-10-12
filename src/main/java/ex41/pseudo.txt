@@ -1,0 +1,39 @@
+This program reads a list of names from a file
+and sorts them in alphabetical order (descending),
+before printing to console
+
+function sort(Argument one, argument two){
+
+    for{
+        for{
+            Compare names in a String array. Swap
+            names based on name after it
+        }
+    }
+
+    return String array
+
+end
+}
+
+{
+In main function
+
+    Create readable input file and initialize a String array
+
+    try{
+        while{
+            Scan file and insert names into String array
+            and count number of names with a counter
+        }
+
+        Send String[] and counter to the sort function
+        for{
+            Print each name to the user
+        }
+    }
+    catch{
+        Print to user if file could not be read
+    }
+
+}

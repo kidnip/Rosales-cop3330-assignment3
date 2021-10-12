@@ -1,0 +1,20 @@
+@startuml
+
+class WebsiteGen{
+    ..Methods..
+    +void indexGen()
+    +void main()
+}
+
+entity Website_Folder{
+    Name Folder
+    ..Files..
+    .html
+    .js
+    .css
+
+}
+
+WebsiteGen <- WebsiteGen : 1. Calls indexGen() from within main()
+WebsiteGen -down-> Website_Folder : 2. Directories & files are created as specified by user input
+@enduml

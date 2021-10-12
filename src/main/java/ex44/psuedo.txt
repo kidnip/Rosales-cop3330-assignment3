@@ -1,0 +1,54 @@
+This program reads text from a JSON file and
+parse it such that the data can be used as to
+search a keyword in a database
+
+class Products{
+    This is class object that will hold parameters such as
+    product name, price, and quantity
+
+    Include getter and setters
+}
+
+function parseFile(Argument one, Argument two){
+
+    try{
+        Use the JSON library to create an object and array that
+        stores the parsed data read from the input file and using
+        the GSON library to return the data in a usable class array
+    }
+    catch{
+        Print to user that file could not be accessed
+    }
+
+end
+}
+
+{
+In the main function
+
+    Pass the path and array name of the input JSON file to
+    the pareFile function, storing the result in a Products array
+    Initialize a flag equal to zero for searching
+
+    Prompt user for a product name
+    if the Products array is not null{
+        while true{
+            for the length of the Products array{
+                if a product name matches the user entered name{
+                    then save the index of the product name and
+                    set a flag equal to one
+                    Exit loop
+                }
+            }
+            if flag is one, meaning name was found{
+                Print the name, price and quantity of the
+                product using the index
+                Exit loop
+            }
+            else{
+                Print failure statement to user and prompt
+                for another choice
+            }
+        }
+    }
+}

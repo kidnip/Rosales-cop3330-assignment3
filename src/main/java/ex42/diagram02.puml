@@ -1,0 +1,12 @@
+@startuml
+
+class DataParse{
+    ..Methods..
+    +{static} String[][] parse()
+    +{static} void main()
+}
+circle Input_File
+Input_File -> DataParse : 1. File is read into String[]
+DataParse <- DataParse : 2. Calls parse() from within main()
+
+@enduml

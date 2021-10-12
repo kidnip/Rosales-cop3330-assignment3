@@ -1,0 +1,36 @@
+This program reads in the text from a
+file and finds every instance of word
+"use" and replaces it with utilize
+
+function replaceFile(Argument one, Argument two, Argument three){
+    try{
+        Read the file and store the text as a string
+        and replace each instance of "use" with "utilize"
+
+        return string converted in array of bytes
+    }
+    catch{
+        Print failure statement
+    }
+
+end
+}
+
+{
+In the main statement
+    try{
+        Call to replaceFile function by sending file path,
+        the word to find ("use") and the word to change it
+        to ("utilize") and store it in a byte array
+
+        if the array not null{
+            then prompt user for name of output file and
+            write the byte array to the file
+        }
+    }
+    catch{
+        Print failure statement
+    }
+
+
+}

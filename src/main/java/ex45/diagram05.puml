@@ -1,0 +1,13 @@
+@startuml
+
+class WordFinder{
+    ..Methods..
+    +{static} String replaceFile()
+    +{static} void main()
+}
+
+circle Input_File
+Input_File -> WordFinder : 2. Reads text from file into String
+WordFinder <- WordFinder : 1. Calls replaceFile() within main()
+
+@enduml

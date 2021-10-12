@@ -1,0 +1,43 @@
+This program reads a list of names and numbers
+from a file and parses the data into separate
+parts, before printing to console
+
+function parse(Argument one, Argument two){
+
+    for{
+        Split the input where there is a comma
+        and insert into an array of String arrays
+    }
+
+    return parsed array of arrays
+
+end
+}
+
+{
+In the main function
+
+    Create readable file and initialize String arrays
+
+    try{
+        while{
+            Scan each line in the file and insert them
+            into the String array and increment a counter
+            by one for each line
+        }
+
+        Send String array and counter to parse function
+        and store result to an array of String arrays
+
+        for{
+            for{
+                Use nested for loop to print each element
+                in the array of arrays in tabular form
+                to the user
+            }
+        }
+    }
+    catch{
+        Print to user if file could not be accessed
+    }
+}

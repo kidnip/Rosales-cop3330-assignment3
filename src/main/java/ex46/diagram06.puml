@@ -1,0 +1,13 @@
+@startuml
+
+class WordFrequency{
+    ..Methods..
+    +{static} HashMap<String, Integer> getFrequencies()
+    +{static} void main()
+}
+
+circle Input_File
+WordFrequency <- WordFrequency : 2. Calls getFrequencies() within main()
+Input_File -> WordFrequency : 1. Reads text into String[]
+
+@enduml
